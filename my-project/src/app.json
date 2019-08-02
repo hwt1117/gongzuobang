@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/logs/main",
+    "pages/zufang/main",
+    "pages/mine/main"
+
+    ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3185ff",
+    "navigationBarTitleText": "职前公社",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "实习",
+      "pagePath": "pages/index/main",
+      "iconPath": "static/tabs/home.png",
+      "selectedIconPath": "static/tabs/home-active.png"
+    }, {
+      "text": "租房",
+      "pagePath": "pages/logs/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    },{
+      "text": "职言",
+      "pagePath": "pages/zufang/main",
+      "iconPath": "static/tabs/home.png",
+      "selectedIconPath": "static/tabs/home-active.png"
+    },
+    {
+      "text": "我的",
+      "pagePath": "pages/mine/main",
+      "iconPath": "static/tabs/mine.png",
+      "selectedIconPath": "static/tabs/mine-active.png"
+    }],
+
+    "items": [{
+      "name": "实习",
+      "pagePath": "pages/index/main",
+      "icon": "static/tabs/home.png",
+      "activeIcon": "static/tabs/home-active.png"
+    }, {
+      "name": "租房",
+      "pagePath": "pages/logs/main",
+      "icon": "static/tabs/orders.png",
+      "activeIcon": "static/tabs/orders-active.png"
+    },
+    {
+      "name": "职言",
+      "pagePath": "pages/zufang/main",
+      "icon": "static/tabs/orders.png",
+      "activeIcon": "static/tabs/orders-active.png"
+    },
+    {
+      "name": "职言",
+      "pagePath": "pages/zufang/main",
+      "icon": "static/tabs/mine.png",
+      "activeIcon": "static/tabs/mine-active.png"
+    }],
+    "position": "bottom"
+  }
+}
