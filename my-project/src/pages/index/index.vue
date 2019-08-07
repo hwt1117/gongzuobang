@@ -19,14 +19,19 @@
       </div>
       <div>
         <scroll-view class="header-shequ" scroll-x="true">
-          <view class="header-shequ-box" v-for="(item, index) in hotList" :key="index">
+          <div class="header-shequ-box" v-for="(item, index) in hotList" :key="index">
             <div class="header-shequn-box-i">
-              <div style="text-align:center">
+              <div style="text-align:center" @click="jump()">
                 <img :src="item.pic" class="recommend_hot_image" />
               </div>
               <div style="font-size:12px;text-align:center">{{item.title}}</div>
             </div>
-          </view>
+          </div>
+          <span class="header-shequn-box-i">
+           <img src="../../../static/images/@2x/onload.png" class="recommend_hot_image1" @click="getMore()"/> 
+           
+          </span>
+          
         </scroll-view>
       </div>
     </div>
@@ -175,14 +180,14 @@ export default {
       let demo = this;
       fly
         .get(
-          "https://www.easy-mock.com/mock/5d3adfe06fa32d72383ea948/example/api/shequ"
+          "http://localhost:3000/course"
         )
         .then(function(response) {
           if (response.status === 200) {
             if (first) {
               let merchant = response.data;
-              console.log(merchant.data);
-              demo.merchant = merchant.data;
+              console.log(response.data);
+              demo.merchant = merchant;
             } else {
               // for(let i =0;i<){
 
@@ -207,6 +212,16 @@ export default {
       }).catch(err=>{
         console.log(err)
       })
+    },
+    getMore(){
+      wx.navigateTo({
+              url: "/pages/shequnmore/main"
+            });
+    },
+    jump(){
+      wx.navigateTo({
+              url: "/pages/shequnmore/main"
+            });
     }
   },
   onLoad() {
@@ -290,6 +305,11 @@ export default {
 .recommend_hot_image {
   width: 40px;
   height: 40px;
+}
+.recommend_hot_image1 {
+  width: 40px;
+  height: 40px;
+  padding: 15px
 }
 .content {
   box-sizing: border-box;

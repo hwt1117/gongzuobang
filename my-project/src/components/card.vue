@@ -1,24 +1,31 @@
 <template>
   <div>
-      <i class="icon-search"></i>
-      <input
-        type="text"
-        v-model="msg"
-        placeholder="输入感兴趣的关键词或发布者昵称"
-        placeholder-style="color: #858585;"
-        class="inp1"
-      />
-    </div>
+    <i class="icon-search"></i>
+    <input
+      type="text"
+      v-model="msg"
+      placeholder="输入感兴趣的关键词或发布者昵称"
+      placeholder-style="color: #858585;"
+      class="inp1"
+      @click="search()"
+    />
+  </div>
 </template>
 
 <script>
 export default {
-
-}
+  data() {
+    return {};
+  },
+  methods:{
+    search(){
+      
+    }
+  }
+};
 </script>
 
-<style scoped>  
-
+<style scoped>
 .icon-search {
   background: url(../../static/images/search1.png) no-repeat;
   width: 20px;
