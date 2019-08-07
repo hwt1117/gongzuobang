@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="context">
+    <div class="context" >
       <div class="inner">
         <div class="selfinfo">
           <div class="headimg">

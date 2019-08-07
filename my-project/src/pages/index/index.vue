@@ -7,7 +7,7 @@
     <div class="header">
       <div class="header-title">
         <div class="header-title-left">职前社群</div>
-        <div class="header-title-right">
+        <div class="header-title-right" @click="getShqunMore()">
           更多
           <i class="right-icon" style="float:left; margin-right:5px">
             <img
@@ -220,6 +220,11 @@ export default {
     },
     jump(){
       wx.navigateTo({
+              url: "/pages/shequnmore/main"
+            });
+    },
+    getShqunMore(){
+       wx.navigateTo({
               url: "/pages/shequnmore/main"
             });
     }
