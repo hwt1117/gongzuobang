@@ -1,3 +1,11 @@
 {
-  "navigationBarTitleText": "我的"
+  "navigationBarTitleText": "编辑资料",
+  "usingComponents": {
+    "i-icon":"../../../static/iview/icon/index",
+    "i-card": "../../../static/iview/card/index"
+
+
+
+
+  }
 }

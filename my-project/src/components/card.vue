@@ -19,7 +19,9 @@ export default {
   },
   methods:{
     search(){
-      
+     wx.navigateTo({
+              url: "/pages/circle_search/main"
+            });
     }
   }
 };

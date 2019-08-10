@@ -1,13 +1,33 @@
 {
   "pages": [
-    "pages/index/main",
-    "pages/logs/main",
-    "pages/zufang/main",
-    "pages/mine/main",
-    "pages/shequn/main",
+    "pages/circle/main",
     "pages/release/main",
     "pages/requestdetail/main",
-    "pages/shequnmore/main"
+    "pages/circle_more/main",
+    "pages/circle_build/main",
+    "pages/circle_search/main",
+    "pages/circle_newsdetails/main",
+    "pages/mine/main",
+    "pages/mine_collect/main",
+    "pages/mine_compile/main",
+    "pages/mine_inform/main",
+    "pages/mine_publish/main",
+    "pages/circle_details/main",
+    "pages/home/main",
+    "pages/home_publish/main",
+    "pages/home_details/main",
+    "pages/home_search/main",
+    "pages/home_gps/main",
+	"pages/rent/main",
+    "pages/room_details/main",
+    "pages/rent_details/main",
+    "pages/release_roominfo/main",
+    "pages/release_roomrent/main",
+    "pages/rent_seeking/main",
+    "pages/reports/main",
+
+    "pages/friendcircle/main"
+
 
     ],
   "window": {
@@ -24,17 +44,17 @@
 
     "list": [{
       "text": "实习",
-      "pagePath": "pages/index/main",
+      "pagePath": "pages/home/main",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     },{
       "text": "租房",
-      "pagePath": "pages/zufang/main",
-      "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
-    }, {
+      "pagePath": "pages/rent/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    },{
       "text": "职言",
-      "pagePath": "pages/logs/main",
+      "pagePath": "pages/circle/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     },
@@ -44,8 +64,15 @@
       "iconPath": "static/tabs/mine.png",
       "selectedIconPath": "static/tabs/mine-active.png"
     }],
-
+      
     
     "position": "bottom"
-  }
+  },
+  
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+      }
+    }
+  
 }
