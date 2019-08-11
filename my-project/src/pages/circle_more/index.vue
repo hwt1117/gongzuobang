@@ -106,7 +106,7 @@ export default {
       return this.winHeight + "px";
     }
   },
-  created() {
+  mounted() {
     this.gethostList();
   },
   methods: {
@@ -135,10 +135,10 @@ export default {
     gethostList() {
       let frist = this;
       fly
-        .get("http://localhost:3000/index_model")
+        .get("https://www.easy-mock.com/mock/5d4f079039c8931984c3dcc6/zhiqianquan/circle_more")
         .then(function(response) {
           if (response.status === 200) {
-            let hostList = response.data;
+            let hostList = response.data.data;
             console.log(hostList);
             frist.hostList = hostList;
           }

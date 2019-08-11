@@ -87,7 +87,7 @@ export default {
       List3: [],
     };
   },
-  created(){
+  mounted(){
       this.getList3()
   },
   methods: {
@@ -111,10 +111,10 @@ export default {
       getList3(){
           
           let demo=this
-          fly.get('http://localhost:3000/index')
+          fly.get('https://www.easy-mock.com/mock/5d4f079039c8931984c3dcc6/zhiqianquan/home')
           .then(function(response){
               if(response.status===200){
-                  let List3=response.data
+                  let List3=response.data.data
                   console.log(List3)
                   demo.List3=List3
               }

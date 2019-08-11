@@ -167,7 +167,7 @@ export default {
       return this.winHeight + "px";
     }
   },
-  created() {
+  mounted() {
     this.getmerchant(true);
     this.getShequn();
   },
@@ -186,11 +186,11 @@ export default {
     getmerchant(first) {
       let demo = this;
       fly
-        .get("http://localhost:3000/course")
+        .get("https://www.easy-mock.com/mock/5d4f079039c8931984c3dcc6/zhiqianquan/circle")
         .then(function(response) {
           if (response.status === 200) {
             if (first) {
-              let merchant = response.data;
+              let merchant = response.data.data;
               console.log(response.data);
               demo.merchant = merchant;
             } else {
@@ -207,7 +207,7 @@ export default {
     },
     getShequn() {
       fly
-        .get("http://localhost:3000/course")
+        .get("https://www.easy-mock.com/mock/5d4f079039c8931984c3dcc6/zhiqianquan/circle")
         .then(response => {
           if (response.status === 200) {
             let hotList = response.data;
